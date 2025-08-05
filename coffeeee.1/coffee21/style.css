@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #3b0a0a;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: #2d0606;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+nav a {
+  margin: 0 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: orange;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4em 2em;
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.hero-text span {
+  color: orange;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.hero-text p {
+  margin-top: 1em;
+  font-size: 1.1em;
+  color: #d4d4d4;
+}
+
+.buttons {
+  margin-top: 2em;
+}
+
+.btn {
+  padding: 0.8em 1.5em;
+  margin-right: 10px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.order {
+  background-color: orange;
+  color: #000;
+}
+
+.contact {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.hero-img img {
+  max-width: 400px;
+  width: 100%;
+}
+
+section {
+  padding: 3em 2em;
+}
+
+h2 {
+  color: orange;
+  text-align: center;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5em;
+  margin-top: 2em;
+}
+
+.image-grid img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+input, textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+button.submit-btn {
+  background-color: orange;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #2d0606;
+  padding: 1em 2em;
+  text-align: center;
+  margin-top: 3em;
+  font-size: 0.9em;
+}
+

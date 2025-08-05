@@ -1,0 +1,236 @@
+/* General */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #3b0a0a;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+/* Header */
+header {
+  background-color: #2d0606;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+nav a {
+  margin: 0 15px;
+}
+
+nav a:hover {
+  color: orange;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3em 2em;
+}
+
+.hero-text {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.hero-text h1 {
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.hero-text span {
+  color: orange;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 1.1em;
+  color: #d4d4d4;
+}
+
+.buttons {
+  margin-top: 2em;
+}
+
+.buttons button {
+  padding: 0.8em 1.5em;
+  margin-right: 10px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.order {
+  background-color: orange;
+  color: #000;
+}
+
+.contact {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+/* Hero Image */
+.hero-img img {
+  max-width: 400px;
+}
+
+/* Menu Section */
+.menu-container {
+  padding: 2em;
+}
+
+.menu-section {
+  margin-bottom: 3em;
+}
+
+.menu-section h2 {
+  color: orange;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 0.5em;
+}
+
+.coffee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5em;
+  margin-top: 1em;
+}
+
+.coffee-grid img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+/* Gallery Page */
+.gallery-container {
+  padding: 2em;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+  justify-content: center;
+}
+
+.gallery-grid img {
+  width: 250px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Testimonials Page */
+.testimonials-container {
+  padding: 2em;
+}
+
+.testimonial-card {
+  background-color: #4b1a1a;
+  border-radius: 10px;
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.testimonial-card h3 {
+  color: orange;
+  margin-bottom: 0.5em;
+}
+
+/* Contact Page */
+.contact-container {
+  padding: 2em;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.8em;
+  margin-bottom: 1em;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contact-form button {
+  background-color: orange;
+  color: #000;
+  font-weight: bold;
+  padding: 0.8em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-info {
+  margin-top: 2em;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #2d0606;
+  padding: 1em;
+  text-align: center;
+  font-size: 0.9em;
+  margin-top: 3em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    padding: 0;
+  }
+
+  .hero-img img {
+    margin-top: 2em;
+    width: 80%;
+  }
+}
